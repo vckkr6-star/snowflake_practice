@@ -2,8 +2,8 @@ version: 2
 
 sources:
   - name: hr
-    database: source_db
-    schema: hr
+    database: finance_db
+    schema: hr_schema
     tables:
       - name: emp
       - name: dept
