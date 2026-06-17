@@ -1,4 +1,20 @@
-{{config(materialized='incremental')}}
+{{config(materialized='incremental'
+,incremental_strategy='delete+insert'
+,unique_key='order_id'
+)}}
+
+select * from raw_orders
+
+/*{{config(materialized='incremental'
+,incremental_strategy='append'
+)}}
+
+select * from raw_orders
+
+{{config(materialized='incremental'
+,incremental_strategy='merge'
+,unique_key='order_id'
+)}}
 
 select *
 from raw_orders
@@ -11,4 +27,12 @@ where updated_date>
     from {{ this }}
 )
 
-{% endif %}
+{% endif %}*/
+
+
+
+
+
+
+
+
