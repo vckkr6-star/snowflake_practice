@@ -1,7 +1,8 @@
-{{config(materialized='table')}}
+{{ config(materialized= 'table' ) }}
 
 select 
 customer_id,
 customer_name,
 country
-from {{ref('stg_customers')}}
+from {{ ref('stg_customers') }}
+

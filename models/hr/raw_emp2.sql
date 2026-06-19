@@ -1,9 +1,13 @@
---{{config(materialized='table',transient='false')}}
-{{config(materialized='incremental',
+/*{{ config(
+materialized='table',transient='false'
+) }}*/
+{{ config(
+materialized='incremental',
 incremental_strategy='append',
 unique_key='empid',
 transient='false',
-on_schema_change='append_new_columns')}}
+on_schema_change='append_new_columns'
+) }}
 --select * from dbt_database.dbt_schema.raw_employee
 select * 
 ,sysdate() as reported_date from dbt_database.dbt_schema.raw_employee

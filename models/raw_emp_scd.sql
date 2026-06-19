@@ -7,4 +7,4 @@
     }}
     select *,
     sysdate() as loaded_date
-    from {{source('hr','emp')}}
+    from {{ source('hr','emp') }}
