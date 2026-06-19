@@ -1,1 +1,1 @@
-select * from {{ref('raw_emp1')}}
+select * from {{ ref('raw_emp1') }}
