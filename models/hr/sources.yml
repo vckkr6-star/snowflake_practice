@@ -7,3 +7,10 @@ sources:
     tables:
       - name: emp
       - name: dept
+  - name: raw
+    database: dbt_db
+    schema: dbt_schema
+    tables:
+      - name: raw_customers
+      - name: raw_customers_1
+      - name: raw_orders
