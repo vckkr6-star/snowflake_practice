@@ -1,0 +1,19 @@
+version: 2
+
+models:
+  - name: stg_customers_3
+    columns:
+      - name: customer_id
+        tests:
+          - unique
+          - not_null
+      - name: age
+        tests:
+          - dbt_utils.expression_is_true:
+              arguments:
+                expression: "age >=18"
+      - name: email
+        tests:
+          - dbt_utils.expression_is_true:
+              arguments:
+                expression: "email like '%@%'"
