@@ -1,5 +1,5 @@
 {{ config(materialized='table') }}
 
-select *
+select empno,ename,sal,deptno
 --from source_db.hr.emp
 from {{ source('hr','emp') }}

@@ -9,7 +9,7 @@ transient='false',
 on_schema_change='append_new_columns'
 ) }}
 --select * from dbt_database.dbt_schema.raw_employee
-select * 
+select empid
 ,sysdate() as reported_date from dbt_database.dbt_schema.raw_employee
 
 --delete+insert =>create a tempoarry table-->delete the data and again reinsert the data

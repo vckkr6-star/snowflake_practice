@@ -1,6 +1,7 @@
-{{ config
-(materialized='view'
-) }}
+{{ config(materialized='view') }}
 
-select *
+select 
+customer_id,
+customer_name,
+country
 from {{ ref('temp_customers') }}
