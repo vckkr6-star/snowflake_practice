@@ -4,15 +4,35 @@ sources:
   - name: hr
     database: finance_db
     schema: hr_schema
+
     tables:
       - name: emp
       - name: dept
+
   - name: raw
     database: dbt_db
     schema: dbt_schema
+
     tables:
       - name: raw_customers
+
       - name: raw_customers_1
+
       - name: raw_orders
+
       - name: raw_orders_2
+
       - name: products
+
+      - name: raw_customers_2
+        config:
+          loaded_at_field: loaded_at
+
+        freshness:
+          warn_after:
+            count: 1
+            period: day
+
+          error_after:
+            count: 2
+            period: day

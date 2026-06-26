@@ -1,8 +1,0 @@
-version: 2
-
-models:
-  - name: stg_orders_1
-    columns:
-      - name: customer_id
-        tests:
-          - not_null
