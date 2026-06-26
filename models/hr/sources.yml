@@ -15,3 +15,4 @@ sources:
       - name: raw_customers_1
       - name: raw_orders
       - name: raw_orders_2
+      - name: products
