@@ -6,5 +6,5 @@
         )
 }}
 
-select *
+select empno,ename,sal,deptno
 from {{ source('hr','emp') }}

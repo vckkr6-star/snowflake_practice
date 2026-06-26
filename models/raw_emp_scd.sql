@@ -5,6 +5,6 @@
         unique_key='empno'
     )
     }}
-    select *,
+    select empno,
     sysdate() as loaded_date
     from {{ source('hr','emp') }}

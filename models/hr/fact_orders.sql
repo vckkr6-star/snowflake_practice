@@ -4,7 +4,9 @@ materialized= 'incremental'
 ,unique_key= 'order_id'
 ) }}
 
-select * from raw_orders
+select order_id,
+customer_id,
+amount  from raw_orders
 
 
 

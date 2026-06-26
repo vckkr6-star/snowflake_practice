@@ -2,7 +2,7 @@
 
 with rk_in_dept as
 (
-select *,
+select empno,ename,sal,deptno,
 row_number() over(partition by deptno order by sal desc) as rk
 from {{ ref('raw_emp') }}
 )

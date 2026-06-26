@@ -1,1 +1,1 @@
-select * from {{ ref('raw_emp1') }}
+select empno,ename from {{ ref('raw_emp1') }}
