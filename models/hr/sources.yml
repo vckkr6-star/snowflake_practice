@@ -22,7 +22,7 @@ sources:
 
       - name: raw_orders_2
 
-      - name: products
+      
       - name: raw_products
 
       - name: raw_customers_2

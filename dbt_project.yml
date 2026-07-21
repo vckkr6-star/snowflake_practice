@@ -41,10 +41,19 @@ models:
     staging_b:
       +schema: SILVER
 
+    staging_r:
+      +materialized: table
+      +database: RETAIL_DB
+      +schema: STAGING
+    intermediate_r:
+      +database: RETAIL_DB
+      +schema: INTERMEDIATE
+      +materialized: table
+
     marts:
       +schema: GOLD
 
     
-    # Applies to all files under models/example/
+    # Applies to all files under models/staging_r/
     example:
       +materialized: table
