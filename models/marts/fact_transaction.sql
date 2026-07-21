@@ -1,0 +1,15 @@
+SELECT
+
+TRANSACTION_ID,
+
+ACCOUNT_NO,
+
+TRANSACTION_TYPE,
+
+AMOUNT,
+
+TRANSACTION_DATE,
+
+CHANNEL
+
+FROM {{ ref('stg_transaction') }}
