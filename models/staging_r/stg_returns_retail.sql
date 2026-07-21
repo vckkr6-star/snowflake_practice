@@ -1,0 +1,11 @@
+SELECT
+
+RETURN_ID,
+
+ORDER_ITEM_ID,
+
+RETURN_DATE,
+
+UPPER(RETURN_REASON) AS RETURN_REASON
+
+FROM {{ source('raw','returns') }}

@@ -1,0 +1,21 @@
+version: 2
+
+models:
+  - name: stg_customers_retail
+    columns: 
+      - name: customer_id
+        tests: 
+          - unique
+          - not_null
+      - name: email
+        tests:
+          - not_null
+  - name: stg_products_retail
+    columns:
+      - name: product_id
+        tests:
+            - unique
+            - not_null
+              
+              
+          
