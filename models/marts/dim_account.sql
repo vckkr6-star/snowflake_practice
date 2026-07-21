@@ -1,0 +1,15 @@
+SELECT
+
+ACCOUNT_NO,
+
+CUSTOMER_ID,
+
+ACCOUNT_TYPE,
+
+BRANCH_ID,
+
+BALANCE,
+
+ACCOUNT_STATUS
+
+FROM {{ ref('stg_account') }}
