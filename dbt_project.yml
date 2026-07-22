@@ -53,6 +53,11 @@ models:
     marts:
       +schema: GOLD
 
+    marts_r:
+      +database: RETAIL_DB
+      +schema: GOLD
+      +materialized: table
+
     
     # Applies to all files under models/staging_r/
     example:
