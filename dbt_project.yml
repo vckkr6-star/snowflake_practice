@@ -49,6 +49,10 @@ models:
       +database: RETAIL_DB
       +schema: INTERMEDIATE
       +materialized: table
+    staging_n:
+      +database: DBT_DB
+      +schema: GOLD
+      +materialized: table
 
     marts:
       +schema: GOLD
