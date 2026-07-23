@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: new
+    database: dbt_db
+    schema: gold
+    tables:
+      - name: customers
+    
