@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: data
+    database: COMPANY_DB
+    schema: HR
+    tables:
+      - name: employee
+      - name: department

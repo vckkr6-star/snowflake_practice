@@ -53,6 +53,10 @@ models:
       +database: DBT_DB
       +schema: GOLD
       +materialized: table
+    staging_c:
+      +database: COMPANY_DB
+      +schema: HR
+      +materialized: table
 
     marts:
       +schema: GOLD
